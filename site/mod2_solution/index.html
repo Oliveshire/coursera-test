@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mod2_solution</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+p {
+  background-color: #eeeeee;
+  margin: 5%;
+  width: 90%;
+  height: 550px;
+  font-family: Helvetica;
+  padding: 15px;
+  padding-top: 45px;
+  border: 1px solid black;
+}
+
+h1{
+  text-align: center;
+  font-size: 400%;
+}
+
+#container {
+  position: relative;
+}
+
+.topRight {
+  position: absolute;
+  right: 0%;
+  height: 30px;
+  width: 25%;
+  padding: .6%;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+#blue {
+  background-color: #aaaaff;
+}
+
+#yellow {
+  background-color: #ffffaa;
+}
+
+#green {
+  background-color: #aaffaa;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  .col-d-1, .col-d-2, .col-d-3, .col-d-4, .col-d-5, .col-d-6, .col-d-7, .col-d-8, .col-d-9, .col-d-10, .col-d-11, .col-d-12 {
+    float: left;
+  }
+  .col-d-1 {
+    width: 8.33%;
+  }
+  .col-d-2 {
+    width: 16.66%;
+  }
+  .col-d-3 {
+    width: 25%;
+  }
+  .col-d-4 {
+    width: 33.33%;
+  }
+  .col-d-5 {
+    width: 41.66%;
+  }
+  .col-d-6 {
+    width: 50%;
+  }
+  .col-d-7 {
+    width: 58.33%;
+  }
+  .col-d-8 {
+    width: 66.66%;
+  }
+  .col-d-9 {
+    width: 74.99%;
+  }
+  .col-d-10 {
+    width: 83.33%;
+  }
+  .col-d-11 {
+    width: 91.66%;
+  }
+  .col-d-12 {
+    width: 100%;
+  }
+}
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-t-1, .col-t-2, .col-t-3, .col-t-4, .col-t-5, .col-t-6, .col-t-7, .col-t-8, .col-t-9, .col-t-10, .col-t-11, .col-t-12 {
+    float: left;
+  }
+  .col-t-1 {
+    width: 8.33%;
+  }
+  .col-t-2 {
+    width: 16.66%;
+  }
+  .col-t-3 {
+    width: 25%;
+  }
+  .col-t-4 {
+    width: 33.33%;
+  }
+  .col-t-5 {
+    width: 41.66%;
+  }
+  .col-t-6 {
+    width: 50%;
+  }
+  .col-t-7 {
+    width: 58.33%;
+  }
+  .col-t-8 {
+    width: 66.66%;
+  }
+  .col-t-9 {
+    width: 74.99%;
+  }
+  .col-t-10 {
+    width: 83.33%;
+  }
+  .col-t-11 {
+    width: 91.66%;
+  }
+  .col-t-12 {
+    width: 100%;
+  }
+
+  .third {
+  	margin: 2.5%;
+  }
+  #biggen {
+  	width: 95%;
+  }
+}
+
+/********** Mobile **********/
+@media (max-width: 767px) {
+  .col-m-1, .col-m-2, .col-m-3, .col-m-4, .col-m-5, .col-m-6, .col-m-7, .col-m-8, .col-m-9, .col-m-10, .col-m-11, .col-m-12 {
+    float: left;
+
+  }
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 74.99%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1>All Star Lyrics</h1>
+
+<div class="row">
+  <div class="col-d-4 col-t-6 col-m-12" id="container">
+    <p class="topRight" id="blue">First</p>
+    <p>
+      Somebody once told me the world is gonna roll me<br>
+      I ain't the sharpest tool in the shed<br>
+      She was looking kind of dumb with her finger and her thumb<br>
+      In the shape of an "L" on her forehead<br>
+      Well, the years start coming and they don't stop coming<br>
+      Fed to the rules and I hit the ground running<br>
+      Didn't make sense not to live for fun<br>
+      Your brain gets smart but your head gets dumb<br>
+      So much to do, so much to see<br>
+      So what's wrong with taking the backstreets?<br>
+      You'll never know if you don't go<br>
+      You'll never shine if you don't glow<br>
+      Hey now, you're an all star<br>
+      Get your game on, go play<br>
+      Hey now, you're a rock star<br>
+      Get the show on, get paid<br>
+      And all that glitters is gold<br>
+      Only shooting stars break the mold
+    </p>
+  </div>
+
+  <div class="col-d-4 col-t-6 col-m-12" id="container">
+    <p class="topRight" id="yellow">Second</p>
+    <p>
+      It's a cool place, and they say it gets colder<br>
+      You're bundled up now, wait 'til you get older<br>
+      But the meteor men beg to differ<br>
+      Judging by the hole in the satellite picture<br>
+      The ice we skate is getting pretty thin<br>
+      The water's getting warm so you might as well swim<br>
+      My world's on fire, how 'bout yours?<br>
+      That's the way I like it and I'll never get bored<br>
+      Hey now, you're an all star<br>
+      Get your game on, go play<br>
+      Hey now, you're a rock star<br>
+      Get the show on, get paid<br>
+      All that glitters is gold<br>
+      Only shooting stars break the mold<br>
+      Somebody once asked<br>
+      Could I spare some change for gas?<br>
+      "I need to get myself away from this place"<br>
+      I said, "Yep, what a concept<br>
+      I could use a little fuel myself<br>
+      And we could all use a little change"
+    </p>
+  </div>
+
+  <div class="col-d-4 col-t-12 col-m-12" id="container">
+    <p class="topRight third" id="green">Third</p>
+    <p class="third" id="biggen">
+      Well, the years start coming and they don't stop coming<br>
+      Fed to the rules and I hit the ground running<br>
+      Didn't make sense not to live for fun<br>
+      Your brain gets smart but your head gets dumb<br>
+      So much to do, so much to see<br>
+      So what's wrong with taking the backstreets?<br>
+      You'll never know if you don't go (go!)<br>
+      You'll never shine if you don't glow<br>
+      Hey now, you're an all star<br>
+      Get your game on, go play<br>
+      Hey now, you're a rock star<br>
+      Get the show on, get paid<br>
+      And all that glitters is gold<br>
+      Only shooting stars break the mold<br>
+      Hey now<br>
+      Hey now<br>
+      Hey, hey, hey now<br>
+      Hey now<br>
+      Hey now, you're an all star<br>
+      Hey now, you're an all star<br>
+      Hey now, you're an all star<br>
+      Only shooting stars break the mold
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>
